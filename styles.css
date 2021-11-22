@@ -177,7 +177,7 @@ audio::-webkit-media-controls-play-button,
 }
 
 .fill{animation: bounce 2s infinite;}
-#arrow{
+.arrow{
     text-align:center;
     margin:auto;
     position: absolute;
