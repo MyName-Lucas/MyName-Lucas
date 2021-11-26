@@ -16,6 +16,13 @@
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* These are the styles for overall elements/body(NOT specific to classes/id's */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
 h1{
     text-align: center;
     margin: 110px 0;
@@ -41,7 +48,8 @@ button:hover{/*BUTTON hover*/
     transform: scale(1.1);
     transform-origin: center;
 }
-/* This is the navigation STYLES*/
+
+/* These are the navigation STYLES*/
 .nav{ 
     z-index: 2;
     display: flex;
@@ -67,14 +75,14 @@ a:hover{
 }
 h3{margin-right: auto;}
 
-/*IMAGE STYLES*/
+/*FLIPPY IMAGE STYLES*/
 .flip:hover{
     transform: scaleX(-1);
 }
 .flip{
     transition: transform 2s; 
 }
-
+/* Overall image style */
 img{margin:auto;}
 
 
@@ -87,19 +95,7 @@ img{margin:auto;}
 }
 
 
-
-
-
-
-
-
-body, html {
-    height: 100%;
-    margin: 0;
-    
-  }
-
-  /*Pasted From W3SCHools*/
+/*Pasted From W3SCHools*/
 /* FULL PAGE TITLE */
 .background {
     /* The image used */
@@ -113,7 +109,7 @@ body, html {
     background-repeat: no-repeat;
     margin:0;
 }
-
+/* This is to put the title where it is 47% from the top */
 .title{
     text-align:center;
     margin:auto;
@@ -136,15 +132,10 @@ body, html {
     display: inline;
     padding-bottom:0px;
 }
-audio{
-    height:29px;
-}
-.audio{
-    margin-left:149px;
-}
-.audio2{
-    margin-left:161px;
-}
+/* These are the styles for the audio files */
+audio{height:29px;}
+.audio{margin-left:149px;}
+.audio2{margin-left:161px;}
 
 
 
@@ -165,8 +156,7 @@ audio::-webkit-media-controls-play-button,
 
 
 /* This is code for SVG arrow. IT WAS FROM MY OLD CODE */
-
-
+/* This is a bounce keyframe for the  */
 @keyframes bounce{
     0%{ transform: translateY(0); }
     25%{ transform: translateY(-5px);}
@@ -175,8 +165,9 @@ audio::-webkit-media-controls-play-button,
     100%{transform: translateY(0);}
     
 }
-
+/* This sets an infinite animation for the AVg arrow */
 .fill{animation: bounce 2s infinite;}
+/* Basic styling for the arrow */
 .arrow{
     text-align:center;
     margin:auto;

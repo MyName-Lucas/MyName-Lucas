@@ -1,7 +1,7 @@
 let button = document.querySelector("button"); /*this targets the "MORE" */
 let list = document.querySelector(".list");/*This tartets the list with the famous people */
 
-button.addEventListener("click",()=>{/*This is an event listener for what happens if the button is clicked. */
+button.addEventListener("click", ()=>{/*This is an event listener for what happens if the button is clicked. */
     //this is the IF statement for it the button = More.
     if(button.textContent == "More"){
     //This adds the new items to the LIST div
